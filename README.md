@@ -64,6 +64,17 @@ Back in the editor you need to :
 
 ![image](https://github.com/YassinDhahbi/ScriptableObject-EventSystem/assets/90442257/bd45b779-2184-4009-8d4c-f4929f24814f)
 
+
+## Initialization 
+### Example
+For this event manager to work or any other script that derives from the singleton parent to work, it needs to have a call to its Instance. For this, I created a relly simple method called Enable().
+This should be called in the awake of script that is responsible for initializing these instance. Just like this : 
+
+![image](https://github.com/YassinDhahbi/ScriptableObject-EventSystem/assets/90442257/15f87601-86e8-4dab-94a5-260baee88fd9)
+
+Then you just put it on any game object of your game, this initialization only need to happen once. That means it only needs to happen when you game starts.
+
+
 # TIPS!!
 
 ## Tip 1: 
